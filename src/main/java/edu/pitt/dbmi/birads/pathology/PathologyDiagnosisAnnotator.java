@@ -114,9 +114,9 @@ public class PathologyDiagnosisAnnotator {
 	
 	
 	private static String getCategory(IClass cls){
-		IClass malignant = cls.getOntology().getClass("Benign_breast_lesion_mention");
+		IClass malignant = cls.getOntology().getClass("Malignant_breast_lesion_mention");
 		IClass highrisk = cls.getOntology().getClass("High-risk_breast_lesion_mention");
-		IClass benign = cls.getOntology().getClass("Malignant_breast_lesion_mention");
+		IClass benign = cls.getOntology().getClass("Benign_breast_lesion_mention");
 		
 		
 		if(cls.equals(malignant) || cls.hasSuperClass(malignant))
